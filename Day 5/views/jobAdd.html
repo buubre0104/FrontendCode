@@ -1,0 +1,60 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title">Add job</h2>
+    </div>
+    <div class="panel-body">
+        <ng-form name="jobAddForm">
+            <div class="row">
+                <div class="col-lg-6">
+                    <!--TODO#HR3-->
+
+                    <div class="form-group" ng-class="{ 'has-error': jobAddForm.job.$invalid }">
+                        <!--TODO#HR2-->
+                        <label for="JobId">
+                            FirstNme:</label>
+                        <input type="text" id="JobId" ng-model="job.jobId" class="form-control" required>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!--TODO#HR3-->
+
+                    <div class="form-group" ng-class="{ 'has-error': jobAddForm.job.$invalid }">
+                        <!--TODO#HR2-->
+                        <label for="JobName">
+                            FirstNme:</label>
+                        <input type="text" id="JobName" ng-model="job.jobTitle" class="form-control" required>
+
+                    </div>
+                </div>
+               </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <!--TODO#HR3-->
+
+                    <div class="form-group" ng-class="{ 'has-error': jobAddForm.job.$invalid }">
+                        <!--TODO#HR2-->
+                        <label for="MinSal">
+                            FirstNme:</label>
+                        <input type="text" id="MinSal" ng-model="job.minSalary" class="form-control" required>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!--TODO#HR3-->
+
+                    <div class="form-group" ng-class="{ 'has-error': jobAddForm.job.$invalid }">
+                        <!--TODO#HR2-->
+                        <label for="MaxSal">
+                            FirstNme:</label>
+                        <input type="text" id="MaxSal" ng-model="job.maxSalary" class="form-control" required>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </ng-form>
+    </div>
+</div>
